@@ -15,7 +15,7 @@ F:/FinalProj2File/Project-2-Final-Unity-File/projects/GaussianExample-URP
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54049
+54700
 Successfully changed project path to: F:/FinalProj2File/Project-2-Final-Unity-File/projects/GaussianExample-URP
 F:/FinalProj2File/Project-2-Final-Unity-File/projects/GaussianExample-URP
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,16 +49,16 @@ F:/FinalProj2File/Project-2-Final-Unity-File/projects/GaussianExample-URP
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7176]  Target information:
+Player connection [17052]  Target information:
 
-Player connection [7176]  * "[IP] 192.168.1.245 [Port] 0 [Flags] 2 [Guid] 2283716363 [EditorId] 2283716363 [Version] 1048832 [Id] WindowsEditor(7,Legion5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17052]  * "[IP] 192.168.1.245 [Port] 0 [Flags] 2 [Guid] 3066101569 [EditorId] 3066101569 [Version] 1048832 [Id] WindowsEditor(7,Legion5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [7176] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [7176] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17052] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17052] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 21.02 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 496.38 ms.
+Refreshing native plugins compatible for Editor in 19.95 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 575.09 ms.
 Initialize engine version: 2022.3.57f1 (9d8bd91adc0a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path F:/FinalProj2File/Project-2-Final-Unity-File/projects/GaussianExample-URP/Assets
@@ -76,13 +76,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008746 seconds.
-- Loaded All Assemblies, in  0.352 seconds
+Registered in 0.008658 seconds.
+- Loaded All Assemblies, in  0.319 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Unauthorized device detected, Id: 1WMHH810W70382, please add debug authorization and reconnect.
@@ -96,38 +96,38 @@ UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.Us
 UnityEditor.Android.TargetExtension:OnLoad ()
 UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
 
-Android Extension - Scanning For ADB Devices 244 ms
+Android Extension - Scanning For ADB Devices 243 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.568 seconds
-Domain Reload Profiling: 920ms
-	BeginReloadAssembly (105ms)
+- Finished resetting the current domain, in  0.530 seconds
+Domain Reload Profiling: 849ms
+	BeginReloadAssembly (91ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
+	RebuildCommonClasses (33ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (59ms)
-	LoadAllAssembliesAndSetupDomain (146ms)
-		LoadAssemblies (103ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (131ms)
+		LoadAssemblies (89ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (144ms)
-			TypeCache.Refresh (143ms)
-				TypeCache.ScanAssembly (131ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (117ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (569ms)
+	FinalizeReload (531ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (521ms)
+		SetupLoadedEditorAssemblies (491ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (344ms)
+			InitializePlatformSupportModulesInManaged (336ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (122ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			ProcessInitializeOnLoadAttributes (108ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -136,7 +136,7 @@ Domain Reload Profiling: 920ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.602 seconds
+- Loaded All Assemblies, in  0.587 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -165,47 +165,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.669 seconds
-Domain Reload Profiling: 1260ms
-	BeginReloadAssembly (133ms)
+- Finished resetting the current domain, in  0.674 seconds
+Domain Reload Profiling: 1252ms
+	BeginReloadAssembly (128ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (29ms)
+	RebuildCommonClasses (31ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (382ms)
-		LoadAssemblies (340ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (372ms)
+		LoadAssemblies (330ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (115ms)
+		AnalyzeDomain (114ms)
 			TypeCache.Refresh (88ms)
 				TypeCache.ScanAssembly (79ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
 			ResolveRequiredComponents (8ms)
-	FinalizeReload (669ms)
+	FinalizeReload (675ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (518ms)
+		SetupLoadedEditorAssemblies (521ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
+			InitializePlatformSupportModulesInManaged (16ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (146ms)
-			ProcessInitializeOnLoadAttributes (210ms)
-			ProcessInitializeOnLoadMethodAttributes (136ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (142ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 11.78 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 12.12 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
 Unloading 3612 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 71 unused Assets / (1.0 MB). Loaded Objects now: 4066.
-Memory consumption went from 183.0 MB to 181.9 MB.
-Total: 3.973500 ms (FindLiveObjects: 0.269300 ms CreateObjectMapping: 0.149200 ms MarkObjects: 3.244200 ms  DeleteObjects: 0.309400 ms)
+Memory consumption went from 183.4 MB to 182.3 MB.
+Total: 4.208700 ms (FindLiveObjects: 0.285800 ms CreateObjectMapping: 0.215700 ms MarkObjects: 3.388000 ms  DeleteObjects: 0.318000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -223,138 +223,64 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 94643.933814 seconds.
-  path: Assets/Handhelds Pack/Prefabs
-  artifactKey: Guid(b91f5d13cc7afe343b17f81f03c0e782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handhelds Pack/Prefabs using Guid(b91f5d13cc7afe343b17f81f03c0e782) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '618e4d07fe6bfd9ee17ee5bd4c5fd74c') in 0.003826 seconds
+  Time since last request: 97497.252108 seconds.
+  path: Assets/oculus-controller-art-v1.8
+  artifactKey: Guid(052219e85dff9574fa79d507052588b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oculus-controller-art-v1.8 using Guid(052219e85dff9574fa79d507052588b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '883b97116fec0dbda34e6e35e93c9743') in 0.003817 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.315588 seconds.
-  path: Assets/Handhelds Pack/Models
-  artifactKey: Guid(b4dd642b4edaa744cbc41f652433f558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handhelds Pack/Models using Guid(b4dd642b4edaa744cbc41f652433f558) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd1c18772f1dd7242ffd3722311288a76') in 0.001288 seconds
+  Time since last request: 0.000035 seconds.
+  path: Assets/oculus-controller-art-v1.8/Meta Quest 2 Touch
+  artifactKey: Guid(cee591c6b150947cbaa5e0c4b00a54be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oculus-controller-art-v1.8/Meta Quest 2 Touch using Guid(cee591c6b150947cbaa5e0c4b00a54be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f1ad1e0216e48476f67535905379ac7f') in 0.001069 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 3.285356 seconds.
-  path: Assets/Handhelds Pack/Models/handheld_01.fbx
-  artifactKey: Guid(c553556f1a60c32438d6ed02cc1a5d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handhelds Pack/Models/handheld_01.fbx using Guid(c553556f1a60c32438d6ed02cc1a5d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 2.874400 seconds.
+  path: Assets/oculus-controller-art-v1.8/Meta Quest 2 Touch/quest2_controllers_div0.fbx
+  artifactKey: Guid(68fbb80e8329441ee87fffc7fab1d809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oculus-controller-art-v1.8/Meta Quest 2 Touch/quest2_controllers_div0.fbx using Guid(68fbb80e8329441ee87fffc7fab1d809) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-d3d12: upload buffer was full! Waited for COPY queue for 2.585 ms.
-d3d12: upload buffer was full! Waited for COPY queue for 2.572 ms.
- -> (artifact id: '94752e7e8d8bc7389fe2fc8588029038') in 0.623440 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '71b7f975f4264f5eade016af5665aa59') in 1.258878 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
+Number of asset objects unloaded after import = 61
 ========================================================================
 Received Import Request.
-  Time since last request: 0.712930 seconds.
-  path: Assets/Handhelds Pack/Models/handheld_02.fbx
-  artifactKey: Guid(891489948483038409bef97c322a3b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handhelds Pack/Models/handheld_02.fbx using Guid(891489948483038409bef97c322a3b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 327.862435 seconds.
+  path: Assets/oculus-controller-art-v1.8/Meta Quest 2 Touch/quest2_controllers_div1.fbx
+  artifactKey: Guid(d274eb11a805a4fe49d156d46150fdd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oculus-controller-art-v1.8/Meta Quest 2 Touch/quest2_controllers_div1.fbx using Guid(d274eb11a805a4fe49d156d46150fdd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-d3d12: upload buffer was full! Waited for COPY queue for 2.581 ms.
- -> (artifact id: 'f8e7609cfac5d148a1db77fab1a10c70') in 0.039366 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '09e81d6ee0cfc90a87177962c54f74c6') in 0.053700 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 43
 ========================================================================
 Received Import Request.
-  Time since last request: 1.583158 seconds.
-  path: Assets/Handhelds Pack/Models/handheld_03.fbx
-  artifactKey: Guid(403f481fd9411fe4babc6f59defb39d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handhelds Pack/Models/handheld_03.fbx using Guid(403f481fd9411fe4babc6f59defb39d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 1.907358 seconds.
+  path: Assets/oculus-controller-art-v1.8/Meta Quest 2 Touch/quest2_controllers_div2.fbx
+  artifactKey: Guid(7f34d52b64a2a436e899de641fb96ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oculus-controller-art-v1.8/Meta Quest 2 Touch/quest2_controllers_div2.fbx using Guid(7f34d52b64a2a436e899de641fb96ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-d3d12: upload buffer was full! Waited for COPY queue for 2.567 ms.
- -> (artifact id: '2de83f8f8787390c41d8980fee18c69d') in 0.038500 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 45.242912 seconds.
-  path: Assets/Handhelds Pack/Materials/Standard Materials
-  artifactKey: Guid(09cbd03742fe03241a9d1e26cc4bd460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handhelds Pack/Materials/Standard Materials using Guid(09cbd03742fe03241a9d1e26cc4bd460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c0de0614f6bfad976dae15f4a787d946') in 0.001907 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 62.200673 seconds.
-  path: Assets/Textures/90spattern.jpg
-  artifactKey: Guid(0a31c92dab2ca42218e1b79981b2f460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/90spattern.jpg using Guid(0a31c92dab2ca42218e1b79981b2f460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'f026e3638722fc0fedf0432c973ac76a') in 0.034533 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/GeniusCrate_Games/Bedroom_Set/Texture Maps/Bedroom_Set/Bed_02/Bed_AO.png
-  artifactKey: Guid(a81fd4230b481cb409bdbe8d6aa74601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GeniusCrate_Games/Bedroom_Set/Texture Maps/Bedroom_Set/Bed_02/Bed_AO.png using Guid(a81fd4230b481cb409bdbe8d6aa74601) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9b36dbd1739cac7b1a0c1b358f589ff7') in 0.016489 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/GeniusCrate_Games/Bedroom_Set/Texture Maps/Bedroom_Set/Bed_Light/Bed_Light_Metallic.png
-  artifactKey: Guid(e5384f8b53e14004283f6776bb8c65f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GeniusCrate_Games/Bedroom_Set/Texture Maps/Bedroom_Set/Bed_Light/Bed_Light_Metallic.png using Guid(e5384f8b53e14004283f6776bb8c65f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '30bec9121189c703ba2a24bc096a40c7') in 0.018439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/GeniusCrate_Games/Bedroom_Set/Texture Maps/Bedroom_Set/Bed_02/Bed_Height.png
-  artifactKey: Guid(5783e6b982753eb41afeac0cab336bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GeniusCrate_Games/Bedroom_Set/Texture Maps/Bedroom_Set/Bed_02/Bed_Height.png using Guid(5783e6b982753eb41afeac0cab336bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8ba6b85dac24db2fed75d2ab0945125b') in 0.018250 seconds
+ -> (artifact id: 'fd3576438d95af311e70b1762d205825') in 0.052578 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/GeniusCrate_Games/Bedroom_Set/Texture Maps/Bedroom_Set/Bed_02/Bed_BaseColor.png
-  artifactKey: Guid(2fae77db008f60641a77b1b9d71968c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GeniusCrate_Games/Bedroom_Set/Texture Maps/Bedroom_Set/Bed_02/Bed_BaseColor.png using Guid(2fae77db008f60641a77b1b9d71968c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '19c8410290c8b6f72800a475efcd3101') in 0.022532 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 40.267888 seconds.
-  path: Assets/Handhelds Pack/Textures/handheld_01.png
-  artifactKey: Guid(cba70a435c12bb64ea998082efce9495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handhelds Pack/Textures/handheld_01.png using Guid(cba70a435c12bb64ea998082efce9495) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '2f68b6a3c139f5ee0996d71b393710fc') in 0.016254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 80.053803 seconds.
-  path: Assets/Handhelds Pack/Textures/handheld_02_screen.png
-  artifactKey: Guid(0a66c795d9d5cd84392362b190be5bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handhelds Pack/Textures/handheld_02_screen.png using Guid(0a66c795d9d5cd84392362b190be5bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd7d191a6480561d9a95a1c3d431a6dc8') in 0.017156 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 43
