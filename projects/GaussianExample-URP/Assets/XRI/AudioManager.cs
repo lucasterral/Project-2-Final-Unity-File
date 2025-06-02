@@ -108,10 +108,11 @@ public class InteractiveAudioGuide : MonoBehaviour
     private IEnumerator PlayAudioUntilUserAction(AudioClip clip, GameObject highlight1, GameObject highlight2, System.Func<bool> interactionCheck)
     {
         bool interacted = false;
+        bool isFirstPlayback = true;
 
         while (!interacted)
         {
-            // Play the audio
+            // Play audio
             voiceoverSource.clip = clip;
             voiceoverSource.Play();
 
@@ -119,14 +120,28 @@ public class InteractiveAudioGuide : MonoBehaviour
             if (highlight1) highlight1.SetActive(true);
             if (highlight2) highlight2.SetActive(true);
 
-            // While audio is playing, check for user interaction
+            float elapsedTime = 0f;
+
+            // While audio is playing
             while (voiceoverSource.isPlaying)
             {
                 if (interactionCheck())
                 {
-                    interacted = true; // Just mark it! Let audio continue normally
+                    interacted = true;
+
+                    // If it's a repeat, interrupt immediately
+                    if (!isFirstPlayback)
+                    {
+                        voiceoverSource.Stop();
+
+                        if (highlight1) highlight1.SetActive(false);
+                        if (highlight2) highlight2.SetActive(false);
+
+                        yield break; // advance to next routine
+                    }
                 }
 
+                elapsedTime += Time.deltaTime;
                 yield return null;
             }
 
@@ -134,18 +149,20 @@ public class InteractiveAudioGuide : MonoBehaviour
             if (highlight1) highlight1.SetActive(false);
             if (highlight2) highlight2.SetActive(false);
 
-            // If user has performed the interaction, proceed to next step
+            // If user interacted during the first playback, proceed normally after audio ends
             if (interacted)
             {
                 yield break;
             }
             else
             {
-                // Wait 1s and repeat audio + highlight
+                // If no interaction, wait 1s and repeat
+                isFirstPlayback = false; // from now on, user action can interrupt
                 yield return new WaitForSeconds(1f);
             }
         }
     }
+
 
 
     // Check if left or right joystick has moved

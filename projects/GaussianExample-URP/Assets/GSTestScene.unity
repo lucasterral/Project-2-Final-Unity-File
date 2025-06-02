@@ -1423,7 +1423,7 @@ MonoBehaviour:
   AQ5: {fileID: 8300000, guid: ca6c9b1010cf3334db691a4dcf3ed71a, type: 3}
   leftJoystickAction: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightJoystickAction: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  leftTriggerAction: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  leftTriggerAction: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   leftGripAction: {fileID: -3742484312079769484, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightTriggerAction: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightGripAction: {fileID: 15759602096507913, guid: c348712bda248c246b8c49b3db54643f, type: 3}
