@@ -28,7 +28,8 @@ public class Scene1Setup : MonoBehaviour
 			Rigidbody rb = persistentObject.GetComponent<Rigidbody>();
 			if (rb != null)
 			{
-				Destroy(rb);
+				rb.useGravity = false;
+				rb.isKinematic = true;
 			}
 		}
 	}
