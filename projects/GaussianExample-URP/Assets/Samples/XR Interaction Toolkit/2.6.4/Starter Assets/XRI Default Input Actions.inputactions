@@ -966,9 +966,9 @@
                 },
                 {
                     "name": "Teleport Mode Activate",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "a21db72c-4843-4839-b4d0-3ce8d287cb86",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -1043,7 +1043,7 @@
                 {
                     "name": "",
                     "id": "8da6ed3a-f621-49fe-8c76-1f6b7d7754d6",
-                    "path": "<XRController>{LeftHand}/{TriggerButton}",
+                    "path": "<XRController>{LeftHand}/{Primary2DAxis}",
                     "interactions": "Sector(directions=1)",
                     "processors": "",
                     "groups": "Noncontinuous Move",
@@ -1762,9 +1762,9 @@
                 },
                 {
                     "name": "Teleport Mode Activate",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "a6c7231d-c55d-4dd4-9e87-877bb5522ef5",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -1839,7 +1839,7 @@
                 {
                     "name": "",
                     "id": "62690862-4688-4010-975b-b3d9c6062157",
-                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "path": "<XRController>{RightHand}/{Primary2DAxis}",
                     "interactions": "Sector(directions=1)",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -2765,6 +2765,45 @@
                     "processors": "",
                     "groups": "",
                     "action": "TakePhoto",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "CustomTeleport",
+            "id": "c88b912e-d862-4a0e-9252-0c9a0a675cdd",
+            "actions": [
+                {
+                    "name": "LoadScene",
+                    "type": "Button",
+                    "id": "3ad05cb0-cd24-4e21-8547-1687b7baffd1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0acf0c91-ffee-4d8b-a2a8-e6eae5c2fd97",
+                    "path": "<XRController>{LeftHand}/{TriggerProximity}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LoadScene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fe0b888b-92c5-4628-ad6f-7eb3bade24cc",
+                    "path": "<XRController>{RightHand}/{TriggerProximity}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LoadScene",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
