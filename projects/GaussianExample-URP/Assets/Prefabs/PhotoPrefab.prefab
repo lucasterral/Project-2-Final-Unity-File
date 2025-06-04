@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 111495884174969876}
   - component: {fileID: 3689418858722813624}
   - component: {fileID: 8414645671635774279}
+  - component: {fileID: -2200862252405667978}
   m_Layer: 0
   m_Name: PhotoPrefab
   m_TagString: Untagged
@@ -392,3 +393,15 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-2200862252405667978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923317044906087246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d415e1b9cd0c024ca56d73402df3c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
