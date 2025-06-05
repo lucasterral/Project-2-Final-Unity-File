@@ -64,11 +64,12 @@ public class PolaroidPrinter : MonoBehaviour
 	private void OnTakePhoto(InputAction.CallbackContext context)
 	{
 		TakePhoto(); 
+		
 
 		if (!hasPlayedInstruction)
 		{
 			hasPlayedInstruction = true;
-			StartCoroutine(PlayInstructionAfterDelay(3f)); // 3 seconds
+			StartCoroutine(PlayInstructionAfterDelay(1.5f));  
 		}
 	}
 
@@ -108,26 +109,7 @@ public class PolaroidPrinter : MonoBehaviour
 			renderer.material = newMat;
 		}
 
-		// Dynamically find the target object in any loaded scene (by name or tag)
-		string targetObjectName = "InteractablePicture"; // Update this to the name of your target object
-		GameObject targetObject = GameObject.Find(targetObjectName);
-
-		if (targetObject != null)
-		{
-			MeshRenderer otherRenderer = targetObject.GetComponent<MeshRenderer>();
-			if (otherRenderer != null)
-			{
-				otherRenderer.material = newMat; 
-			}
-			else
-			{
-				//Debug.LogWarning($"Found {targetObject.name}, but no MeshRenderer attached!");
-			}
-		}
-		else
-		{
-			//Debug.LogWarning($"No object named '{targetObjectName}' found in loaded scenes.");
-		}
+		GlobalPhotoData.CapturedPhotoTexture = photoTexture;
 
 		// Play shutter sound
 		if (shutterSound != null)

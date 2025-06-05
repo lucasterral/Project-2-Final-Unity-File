@@ -26,7 +26,7 @@ public class TriggerWelcomeSound : MonoBehaviour
         if (!hasPlayed && other.CompareTag("Player"))
         {
 
-			StartCoroutine(PlayWelcome(3f));
+			StartCoroutine(PlayWelcome(1.5f));
 		}
     }
 }
