@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class InteractiveAudioGuide : MonoBehaviour
 {
@@ -26,7 +25,7 @@ public class InteractiveAudioGuide : MonoBehaviour
 
 	// XR Input Actions
 	public InputActionReference leftJoystickAction;
-	public InputActionReference rightJoystickAction;
+	public InputActionReference rightJoystickAction; // ADDED!
 	public InputActionReference leftTriggerAction;
 	public InputActionReference leftGripAction;
 	public InputActionReference rightTriggerAction;
@@ -49,15 +48,8 @@ public class InteractiveAudioGuide : MonoBehaviour
 			backgroundMusicSource.Play();
 		}
 
-		// Check if the audio guide has already been played for this scene
-		string sceneKey = "AudioGuidePlayed_" + SceneManager.GetActiveScene().name;
-		if (!PlayerPrefs.HasKey(sceneKey))
-		{
-			PlayerPrefs.SetInt(sceneKey, 1);
-			PlayerPrefs.Save();
-
-			StartCoroutine(InteractiveSequence());
-		}
+		// Start interactive sequence
+		StartCoroutine(InteractiveSequence());
 	}
 
 	private IEnumerator InteractiveSequence()
@@ -81,8 +73,10 @@ public class InteractiveAudioGuide : MonoBehaviour
 
 		// AQ5 - Wait for either trigger press (highlights still show both triggers)
 		yield return StartCoroutine(PlayAudioUntilUserAction(AQ5, LCtriggerHighlight, RCtriggerHighlight, () => EitherTriggerPressed()));
+
 	}
 
+	// For AQ4: check if either trigger pressed
 	private bool EitherTriggerPressed()
 	{
 		float leftTrigger = leftTriggerAction.action.ReadValue<float>();
@@ -90,12 +84,14 @@ public class InteractiveAudioGuide : MonoBehaviour
 		return leftTrigger > 0.1f || rightTrigger > 0.1f;
 	}
 
+	// For AQ5: check if either grip pressed
 	private bool EitherGripPressed()
 	{
 		float leftGrip = leftGripAction.action.ReadValue<float>();
 		float rightGrip = rightGripAction.action.ReadValue<float>();
 		return leftGrip > 0.1f || rightGrip > 0.1f;
 	}
+
 
 	private IEnumerator PlayAudioClip(AudioClip clip)
 	{
@@ -126,12 +122,14 @@ public class InteractiveAudioGuide : MonoBehaviour
 
 			float elapsedTime = 0f;
 
+			// While audio is playing
 			while (voiceoverSource.isPlaying)
 			{
 				if (interactionCheck())
 				{
 					interacted = true;
 
+					// If it's a repeat, interrupt immediately
 					if (!isFirstPlayback)
 					{
 						voiceoverSource.Stop();
@@ -139,7 +137,7 @@ public class InteractiveAudioGuide : MonoBehaviour
 						if (highlight1) highlight1.SetActive(false);
 						if (highlight2) highlight2.SetActive(false);
 
-						yield break;
+						yield break; // advance to next routine
 					}
 				}
 
@@ -147,22 +145,27 @@ public class InteractiveAudioGuide : MonoBehaviour
 				yield return null;
 			}
 
-			// Disable highlights after audio
+			// After audio is done, disable highlights
 			if (highlight1) highlight1.SetActive(false);
 			if (highlight2) highlight2.SetActive(false);
 
+			// If user interacted during the first playback, proceed normally after audio ends
 			if (interacted)
 			{
 				yield break;
 			}
 			else
 			{
-				isFirstPlayback = false;
+				// If no interaction, wait 1s and repeat
+				isFirstPlayback = false; // from now on, user action can interrupt
 				yield return new WaitForSeconds(1f);
 			}
 		}
 	}
 
+
+
+	// Check if left or right joystick has moved
 	private bool HasJoystickMoved(bool isLeft)
 	{
 		Vector2 joystickInput = isLeft
@@ -172,6 +175,7 @@ public class InteractiveAudioGuide : MonoBehaviour
 		return joystickInput.magnitude > 0.1f;
 	}
 
+	// Check if both triggers are pressed
 	private bool BothTriggersPressed()
 	{
 		float leftTrigger = leftTriggerAction.action.ReadValue<float>();
@@ -179,6 +183,7 @@ public class InteractiveAudioGuide : MonoBehaviour
 		return leftTrigger > 0.1f && rightTrigger > 0.1f;
 	}
 
+	// Check if both grips are pressed
 	private bool BothGripsPressed()
 	{
 		float leftGrip = leftGripAction.action.ReadValue<float>();
